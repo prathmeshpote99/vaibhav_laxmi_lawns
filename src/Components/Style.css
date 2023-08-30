@@ -1,0 +1,568 @@
+.navbar {
+  background-color: #fff;
+  /* box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; */
+}
+
+.brand_logo {
+  height: auto;
+  width: 20vw;
+}
+
+.brand_logo2 {
+  display: none;
+  height: auto;
+  width: 50vw;
+  position: absolute;
+  margin-top: 50%;
+  margin-left: 30%;
+}
+
+.navbar-brand {
+  margin-left: 4%;
+}
+
+.nav-item {
+  margin-left: 50px;
+}
+
+li {
+  font-weight: bold;
+}
+
+.fa-angle-down {
+  margin-left: 5px;
+}
+
+.underline {
+  color: #fa0f0f;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+
+.underline:hover {
+  color: #fa0f0f;
+}
+
+.underline::after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fa0f0f;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.underline:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.dropdown-menu {
+  background-color: #fff;
+}
+
+.about {
+  margin-top: 10%;
+  /* color: black; */
+}
+
+@media only screen and (max-width: 991px) {
+  .brand_logo {
+    display: none;
+  }
+
+  .brand_logo2 {
+    display: block;
+  }
+
+  .nav-item {
+    margin-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .nav-item {
+    margin-left: 10px;
+  }
+}
+/* ------------------------------------------------ Parallaxe --------------------------------------------- */
+
+/* .lawns_video {
+  width: 100%;
+  height: auto;
+} */
+
+.video_div {
+  background-image: url("../hall.JPG");
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* -------------------------------------------------- Available For -------------------------------------------- */
+
+.availablefor_div {
+  margin-bottom: 5%;
+  text-align: center;
+}
+
+.availablefor_heading {
+  margin-bottom: 5%;
+  margin-top: 5%;
+  text-align: center;
+  font-family: "Yeseva One", cursive;
+  font-size: 40px;
+  color: #ff2424;
+  font-weight: bold;
+}
+
+.dividerline {
+  text-align: center;
+  height: 19vh;
+  margin-top: -7%;
+  margin-bottom: 40px;
+}
+
+/* .available_for_img {
+  height: 75%;
+  width: auto;
+} */
+
+.available_for_img {
+  margin-left: 4%;
+  --s: 10px; /* size of the frame */
+  --b: 1px; /* border thickness */
+  --w: 250px; /* width of the image */
+  --h: 150px;
+  --c: #ff2424;
+
+  width: var(--w);
+  height: var(--h);
+  aspect-ratio: 1;
+  object-fit: cover;
+  padding: calc(2 * var(--s));
+  --_g: var(--c) var(--b), #0000 0 calc(100% - var(--b)), var(--c) 0;
+  background: linear-gradient(var(--_g)) 50%/100% var(--_i, 100%) no-repeat,
+    linear-gradient(90deg, var(--_g)) 50% / var(--_i, 100%) 100% no-repeat;
+  outline: calc(var(--w) / 2) solid rgba(0, 0, 0, 0);
+  outline-offset: calc(var(--w) / -2 - 2 * var(--s));
+  transition: 0.4s;
+  cursor: pointer;
+}
+.available_for_img:hover {
+  outline: var(--b) solid var(--c);
+  outline-offset: calc(var(--s) / -2);
+  --_i: calc(100% - 2 * var(--s));
+}
+
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+  .inner_headings {
+    width: 70%;
+    padding-left: 0px;
+    margin-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 2999px) {
+  .dividerline {
+    margin-bottom: -10%px;
+  }
+}
+
+/* ----------------------------------------------------------------------------------------------------- */
+
+.facilities_icons {
+  height: 15vh;
+  width: 7vw;
+}
+
+.facilities_icons_div {
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+/* ---------------------------------------- Welcome To ------------------------------------------------- */
+
+.heading {
+  margin-top: 2%;
+  margin-bottom: 5%;
+  text-align: center;
+  font-family: "Yeseva One", cursive;
+  font-size: 40px;
+  color: #ff2424;
+  font-weight: bold;
+}
+
+.welcome_para {
+  font-family: "Edu NSW ACT Foundation", cursive;
+  font-size: 25px;
+  color: #3b3b3b;
+  text-align: justify;
+}
+
+/* ---------------------------------------- About Page -------------------------------------------------- */
+
+.pagination-outer {
+  text-align: center;
+}
+
+.pagination {
+  background-color: #fff;
+  border-radius: 25px !important;
+  overflow: hidden;
+  border: none !important;
+}
+
+.justify-content-center {
+  padding-top: 10%;
+  padding-bottom: 5%;
+}
+
+a:focus,
+a:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.fa {
+  font-size: 11px;
+  vertical-align: middle !important;
+  color: black;
+}
+
+.pagination li.active .fa {
+  color: #fff !important;
+}
+
+.pagination li a.page-link {
+  color: #505050;
+  background-color: transparent;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 17px 25px;
+  border: none;
+  transition: all 0.3s ease 0s;
+}
+
+.fa-home {
+  transform: scale(1.4, 1.4);
+}
+
+.pagination li:last-child a.page-link {
+  border: none;
+}
+
+.pagination li.active a.page-link,
+.pagination li a.page-link:hover,
+.pagination li.active a.page-link:hover {
+  background-color: transparent;
+}
+
+.pagination li a.page-link:after {
+  content: "";
+  background-color: #42a5f5 !important;
+  height: 100%;
+  width: 100%;
+  transform: scaleY(0);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: all 0.3s;
+}
+
+.pagination li.active a.page-link:after,
+.pagination li a.page-link:hover:after,
+.pagination li.active a.page-link:hover:after {
+  transform: scaleY(1);
+  border-radius: 25px !important;
+}
+
+/* ----------------------------------------------- Hearts ------------------------------------------------ */
+
+.wrapper {
+  width: 100%;
+  background: transparent;
+  min-height: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+
+.x1 {
+  left: 5%;
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  transform: scale(0.9);
+  opacity: 0.6;
+  animation: moveclouds 15s linear infinite,
+    sideWays 4s ease-in-out infinite alternate;
+  -moz-animation: moveclouds 15s linear infinite,
+    sideWays 4s ease-in-out infinite alternate;
+}
+
+.x2 {
+  left: 25%;
+  -webkit-transform: scale(0.6);
+  -moz-transform: scale(0.6);
+  transform: scale(0.6);
+  opacity: 0.9;
+  animation: moveclouds 25s linear infinite,
+    sideWays 5s ease-in-out infinite alternate;
+  -moz-animation: moveclouds 25s linear infinite,
+    sideWays 5s ease-in-out infinite alternate;
+}
+.x3 {
+  left: 55%;
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: 0.8;
+  animation: moveclouds 20s linear infinite,
+    sideWays 4s ease-in-out infinite alternate;
+  -moz-animation: moveclouds 20s linear infinite,
+    sideWays 4s ease-in-out infinite alternate;
+}
+.x4 {
+  left: 72%;
+  -webkit-transform: scale(0.75);
+  -moz-transform: scale(0.75);
+  transform: scale(0.75);
+  opacity: 0.9;
+  animation: moveclouds 18s linear infinite,
+    sideWays 2s ease-in-out infinite alternate;
+  -moz-animation: moveclouds 18s linear infinite,
+    sideWays 0zs ease-in-out infinite alternate;
+}
+.x5 {
+  left: 88%;
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: 0.3;
+  animation: moveclouds 7s linear infinite,
+    sideWays 1s ease-in-out infinite alternate;
+  -moz-animation: moveclouds 7s linear infinite,
+    sideWays 1s ease-in-out infinite alternate;
+}
+.x6 {
+  left: 33%;
+  opacity: 1;
+  -webkit-animation: moveclouds 2s linear infinite,
+    swayWays 1s ease-in-out infinite alternate;
+  animation: moveclouds 10s linear infinite,
+    swayWays 9s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes moveclouds {
+  0% {
+    top: 500px;
+  }
+  100% {
+    top: -500px;
+  }
+}
+
+@keyframes moveclouds {
+  0% {
+    top: 500px;
+  }
+  100% {
+    top: -500px;
+  }
+}
+
+@-webkit-keyframes sideWays {
+  0% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: 50px;
+  }
+}
+
+@keyframes sideWays {
+  0% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: 50px;
+  }
+}
+
+@keyframes swayWays {
+  0% {
+    transform: rotate(12deg);
+    left: -0.3%;
+  }
+  33% {
+    transform: rotate(-2deg);
+    left: 0.7%;
+  }
+  100% {
+    transform: rotate(0deg);
+    left: -12%;
+  }
+}
+
+.altheart {
+  background: url(http://static.indigoimages.ca/2016/shop/113439_img25_twotoneheart.png)
+    no-repeat center;
+  width: 24px;
+  height: 21px;
+  position: relative;
+  display: block;
+}
+
+.heart {
+  position: relative;
+}
+.heart:before,
+.heart:after {
+  position: absolute;
+  content: "";
+  left: 18px;
+  top: 0;
+  width: 18px;
+  height: 30px;
+  background: #cc2022;
+  -moz-border-radius: 20px 50% 0 0;
+  border-radius: 30px 30px 0 0;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transform-origin: 0 100%;
+  -ms-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+}
+.heart:after {
+  left: 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+
+/* ---------------------------------------------- SideFloatingBar --------------------------------------- */
+
+.fl-fl {
+  background: #ff2424;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 4px;
+  width: 190px;
+  position: fixed;
+  right: -140px;
+  z-index: 1000;
+  font: bold normal 10px Arial;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.fa-brands {
+  font-size: 20px;
+  color: #fff;
+  padding: 10px 0;
+  width: 40px;
+  margin-left: 10px;
+}
+
+.fa {
+  font-size: 20px;
+  color: #fff;
+  padding: 10px 0;
+  width: 40px;
+  margin-left: 8px;
+}
+
+.fl-fl:hover {
+  color: #ffffff;
+  right: 0;
+}
+
+.fl-fl a {
+  color: #ffffff !important;
+  text-decoration: none;
+  text-align: center;
+  line-height: 43px !important;
+  vertical-align: top !important;
+}
+
+.float-fb {
+  color: #011a3e;
+  top: 300px;
+}
+
+.float-ig {
+  top: 360px;
+}
+
+.float-wp {
+  top: 420px;
+}
+
+/* .float-gp {
+  top: 270px;
+}
+
+.float-rs {
+  top: 325px;
+} */
+
+/* .float-pn {
+  top: 435px;
+} */
+
+/* ------------------------------------------- Gallery ------------------------------------------------- */
+
+.gallery-wrap {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 40vh;
+}
+.item {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  border-right: 5px solid #ffffff;
+  flex: 2;
+  height: 50%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  transition: flex 0.8s ease;
+}
+.item:hover {
+  flex: 6;
+}
+.item-1 {
+  background-image: url("../IMG-20230327-WA0065.jpg");
+}
+.item-2 {
+  background-image: url("../IMG-20230327-WA0069.jpg");
+}
+.item-3 {
+  background-image: url("../IMG-20230327-WA0062.jpg");
+}
+.item-4 {
+  background-image: url("../IMG-20230327-WA0045.jpg");
+}
+.item-5 {
+  background-image: url("../IMG-20230327-WA0052.jpg");
+}
+.item-6 {
+  background-image: url("../IMG-20230327-WA0038.jpg");
+}
